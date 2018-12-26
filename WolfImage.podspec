@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name             = 'WolfImage'
-    s.version          = '2.0.0'
+    s.version          = '3.0.0'
     s.summary          = 'Tools for working with images in iOS and macOS.'
 
     s.homepage         = 'https://github.com/wolfmcnally/WolfImage'
@@ -18,10 +18,10 @@ Pod::Spec.new do |s|
 
     s.module_name = 'WolfImage'
 
-    s.dependency 'ExtensibleEnumeratedName'
     s.dependency 'WolfFoundation'
     s.dependency 'WolfColor'
     s.dependency 'WolfGeometry'
     s.dependency 'WolfPipe'
     s.dependency 'WolfNumerics'
+    s.dependency 'WolfOSBridge'
 end

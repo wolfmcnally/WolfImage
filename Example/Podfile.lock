@@ -13,12 +13,12 @@ PODS:
     - WolfFoundation
     - WolfNumerics
     - WolfStrings
-  - WolfImage (1.0.2):
-    - ExtensibleEnumeratedName
+  - WolfImage (2.0.0):
     - WolfColor
     - WolfFoundation
     - WolfGeometry
     - WolfNumerics
+    - WolfOSBridge
     - WolfPipe
   - WolfNumerics (3.0.0)
   - WolfOSBridge (1.1.0)
@@ -55,7 +55,7 @@ SPEC CHECKSUMS:
   WolfColor: 235b7fe146a6438b25168a2375ea8091fb5a7718
   WolfFoundation: e3738fadbd87d3867c9a3894eed514576f7c6896
   WolfGeometry: 67fdf16f04f9f063457b76600ea1eaedb8bf17bb
-  WolfImage: 7ae7b5869d83d273a5f6ff2dfd406a4931a3c024
+  WolfImage: e72909ae51a012a3869a5ced53f9de9d939c96a9
   WolfNumerics: 073642f01957a5602df21531e8b2fd31e8b92042
   WolfOSBridge: b44c359c659d4ac704602f3f18336ffedfbb5d6a
   WolfPipe: 5d5633fb37d8a524e326ad9cf24420f0971c8235

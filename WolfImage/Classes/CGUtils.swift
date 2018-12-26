@@ -29,7 +29,7 @@ import CoreGraphics
     import UIKit
 #endif
 
-import WolfColor
+import WolfOSBridge
 import WolfGeometry
 
 public typealias CGContextBlock = (CGContext) -> Void

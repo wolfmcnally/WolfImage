@@ -24,7 +24,6 @@
 
 import Foundation
 import CoreGraphics
-import ExtensibleEnumeratedName
 import WolfFoundation
 import WolfGeometry
 
@@ -33,28 +32,6 @@ import WolfGeometry
 #elseif canImport(AppKit)
     import AppKit
 #endif
-
-public struct PDFReference: ExtensibleEnumeratedName, Reference {
-    public let rawValue: String
-    public let bundle: Bundle
-
-    public init(_ rawValue: String, in bundle: Bundle? = nil) {
-        self.rawValue = rawValue
-        self.bundle = bundle ?? Bundle.main
-    }
-
-    // RawRepresentable
-    public init?(rawValue: String) { self.init(rawValue) }
-
-    // Reference
-    public var referent: PDF {
-        return PDF(named: rawValue, in: bundle)!
-    }
-}
-
-public postfix func ® (lhs: PDFReference) -> PDF {
-    return lhs.referent
-}
 
 public class PDF {
     private let pdf: CGPDFDocument

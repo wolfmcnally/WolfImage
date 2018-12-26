@@ -31,10 +31,10 @@ import UIKit
 #endif
 import WolfPipe
 import WolfNumerics
-import ExtensibleEnumeratedName
 import WolfColor
 import WolfFoundation
 import WolfGeometry
+import WolfOSBridge
 
 extension OSImage {
     public var bounds: CGRect {
@@ -250,26 +250,4 @@ extension OSImage {
         return OSImage.animatedImage(with: images, duration: duration)!
     }
     #endif
-}
-
-public struct ImageReference: ExtensibleEnumeratedName, Reference {
-    public let rawValue: String
-    public let bundle: Bundle
-
-    public init(_ rawValue: String, inBundle bundle: Bundle? = nil) {
-        self.rawValue = rawValue
-        self.bundle = bundle ?? Bundle.main
-    }
-
-    // RawRepresentable
-    public init?(rawValue: String) { self.init(rawValue) }
-
-    // Reference
-    public var referent: OSImage {
-        return OSImage(named: rawValue, in: bundle)!
-    }
-}
-
-public postfix func ® (lhs: ImageReference) -> OSImage {
-    return lhs.referent
 }
