@@ -30,6 +30,7 @@
 
 import WolfColor
 import WolfGeometry
+import WolfOSBridge
 
 #if os(macOS)
     public func newImage(withSize size: Size, isOpaque: Bool = false, background: NSColor? = nil, scale: CGFloat = 0.0, isFlipped: Bool = true, renderingMode: OSImageRenderingMode = .automatic, drawing: CGContextBlock? = nil) -> NSImage {
