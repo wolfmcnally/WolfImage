@@ -122,7 +122,7 @@ extension OSImage {
 #endif
 
 extension OSImage {
-    public func tinted(withColor color: OSColor) -> OSImage {
+    public func tinted(with color: OSColor) -> OSImage {
         return newImage(withSize: self.size, isOpaque: false, scale: self.scale, renderingMode: .alwaysOriginal) { context in
             self.draw(in: self.bounds)
             context.setFillColor(color.cgColor)
@@ -131,7 +131,7 @@ extension OSImage {
         }
     }
 
-    public func shaded(withColor color: OSColor, blendMode: CGBlendMode = .multiply) -> OSImage {
+    public func shaded(with color: OSColor, blendMode: CGBlendMode = .multiply) -> OSImage {
         return newImage(withSize: size, isOpaque: false, scale: scale, isFlipped: true, renderingMode: .alwaysOriginal) { context in
             drawInto(context) { context in
                 context.clip(to: self.bounds, mask: self.cgImage!)
@@ -143,8 +143,8 @@ extension OSImage {
         }
     }
 
-    public func dodged(withColor color: OSColor) -> OSImage {
-        return shaded(withColor: color, blendMode: .colorDodge)
+    public func dodged(with color: OSColor) -> OSImage {
+        return shaded(with: color, blendMode: .colorDodge)
     }
 
     public convenience init(size: CGSize, color: OSColor, isOpaque: Bool = false, scale: CGFloat = 0.0) {
