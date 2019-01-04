@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name             = 'WolfImage'
-    s.version          = '3.0.0'
+    s.version          = '3.0.1'
     s.summary          = 'Tools for working with images in iOS and macOS.'
 
     s.homepage         = 'https://github.com/wolfmcnally/WolfImage'

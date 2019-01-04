@@ -201,6 +201,8 @@ extension OSImage {
 
 extension OSImage {
     private static func newPulseFrameImage(size: CGSize, color: Color, cycles: Double, holdUntil: Frac, fadeAt: Frac, phase: Frac) -> OSImage {
+        func easeIn(_ t: Frac) -> Frac { return 1.0 - cos(t * .pi / 2) }
+        
         return newImage(withSize: size) { context in
             let center = size.bounds.midXmidY
             let radius = min(size.width, size.height) / 2
