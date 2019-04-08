@@ -29,12 +29,9 @@ import AppKit
 #elseif canImport(UIKit)
 import UIKit
 #endif
-import WolfPipe
-import WolfNumerics
 import WolfColor
-import WolfFoundation
 import WolfGeometry
-import WolfOSBridge
+import WolfCore
 
 extension OSImage {
     public var bounds: CGRect {
@@ -202,7 +199,7 @@ extension OSImage {
 extension OSImage {
     private static func newPulseFrameImage(size: CGSize, color: Color, cycles: Double, holdUntil: Frac, fadeAt: Frac, phase: Frac) -> OSImage {
         func easeIn(_ t: Frac) -> Frac { return 1.0 - cos(t * .pi / 2) }
-        
+
         return newImage(withSize: size) { context in
             let center = size.bounds.midXmidY
             let radius = min(size.width, size.height) / 2

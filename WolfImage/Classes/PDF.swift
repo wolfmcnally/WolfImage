@@ -24,8 +24,8 @@
 
 import Foundation
 import CoreGraphics
-import WolfFoundation
 import WolfGeometry
+import WolfCore
 
 #if canImport(UIKit)
     import UIKit

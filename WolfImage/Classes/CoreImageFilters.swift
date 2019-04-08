@@ -24,8 +24,7 @@
 
 import Foundation
 import CoreImage
-import WolfPipe
-import WolfFoundation
+import WolfCore
 
 #if canImport(UIKit)
     import UIKit

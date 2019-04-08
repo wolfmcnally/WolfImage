@@ -23,7 +23,7 @@
 //  SOFTWARE.
 
 import CoreGraphics
-import WolfOSBridge
+import WolfCore
 
 public func drawCrossedBox(into context: CGContext, frame: CGRect, color: OSColor = .red, lineWidth: CGFloat = 1, showOriginIndicators: Bool = true) {
     let insetFrame = frame.insetBy(dx: lineWidth / 2, dy: lineWidth / 2)

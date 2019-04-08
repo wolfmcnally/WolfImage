@@ -1,25 +1,26 @@
 PODS:
   - ExtensibleEnumeratedName (2.0)
-  - WolfColor (4.0.0):
+  - WolfColor (4.0.1):
+    - WolfCore
+  - WolfCore (4.0.5):
+    - ExtensibleEnumeratedName
     - WolfFoundation
+    - WolfNesting
     - WolfNumerics
     - WolfOSBridge
     - WolfPipe
+    - WolfStrings
+    - WolfWith
   - WolfFoundation (3.0.0):
     - WolfNumerics
     - WolfPipe
-  - WolfGeometry (4.0.0):
-    - ExtensibleEnumeratedName
-    - WolfFoundation
-    - WolfNumerics
-    - WolfStrings
-  - WolfImage (4.0.0):
+  - WolfGeometry (4.0.1):
+    - WolfCore
+  - WolfImage (4.0.1):
     - WolfColor
-    - WolfFoundation
+    - WolfCore
     - WolfGeometry
-    - WolfNumerics
-    - WolfOSBridge
-    - WolfPipe
+  - WolfNesting (2.0.1)
   - WolfNumerics (4.0)
   - WolfOSBridge (2.0.0)
   - WolfPipe (2.0.0)
@@ -38,8 +39,10 @@ SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - ExtensibleEnumeratedName
     - WolfColor
+    - WolfCore
     - WolfFoundation
     - WolfGeometry
+    - WolfNesting
     - WolfNumerics
     - WolfOSBridge
     - WolfPipe
@@ -52,10 +55,12 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   ExtensibleEnumeratedName: 50f2d256f6d56baecf681f6fbb6362343dcf885b
-  WolfColor: d002da00b08a511c364baf7c1c7539878f09ef31
+  WolfColor: 066c35c12b7283a1eb12a65d906d9ec4a35216e2
+  WolfCore: 640ab58e6795eeedc3bad28056bcbc46f384ad54
   WolfFoundation: df7514e9faf208f591f02cb156ddb537e2a14958
-  WolfGeometry: 5746cc882f3f407d9d7c948d3cd1020e828c3c03
-  WolfImage: 2b95775e99186b8386a91a56747d470f85dc932e
+  WolfGeometry: 9b1cbefde3f778ea8e63e849fd26fdc4e3dd86b1
+  WolfImage: 4d9ac3f58f7d8c0df6fca406006305161f45c316
+  WolfNesting: 891247e766da604f0e8124d85a158fe123ceb8d8
   WolfNumerics: 6a57756b668073414da8a6911b86781096aded37
   WolfOSBridge: e9260681790a7c89f725e134c0c1d4172d2d2dc9
   WolfPipe: 18ffb77a188263392893a62630defc2a5b92b4f3
