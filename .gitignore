@@ -22,6 +22,7 @@ DerivedData
 # Bundler
 .bundle
 .swiftpm
+.build
 Package.resolved
 
 Carthage/Build

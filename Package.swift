@@ -14,7 +14,7 @@ let package = Package(
     dependencies: [
         .package(url: "https://github.com/wolfmcnally/WolfCore", from: "5.0.0"),
         .package(url: "https://github.com/wolfmcnally/WolfColor", from: "4.0.0"),
-        .package(url: "https://github.com/wolfmcnally/WolfGeometry", from: "5.0.0")
+        .package(url: "https://github.com/wolfmcnally/WolfGeometry", from: "4.0.0")
     ],
     targets: [
         .target(
