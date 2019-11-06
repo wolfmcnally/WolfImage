@@ -22,12 +22,12 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //  SOFTWARE.
 
-#if canImport(AppKit)
-    import AppKit
-    public typealias OSImage = NSImage
-#elseif canImport(UIKit)
-    import UIKit
-    public typealias OSImage = UIImage
+#if canImport(UIKit)
+import UIKit
+public typealias OSImage = UIImage
+#elseif canImport(AppKit)
+import AppKit
+public typealias OSImage = NSImage
 #endif
 
 #if os(macOS)

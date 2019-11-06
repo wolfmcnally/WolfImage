@@ -22,14 +22,14 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //  SOFTWARE.
 
-#if canImport(AppKit)
-    import AppKit
-    public enum OSImageRenderingMode: Int {
-        case automatic
-        case alwaysOriginal
-        case alwaysTemplate
-    }
-#elseif canImport(UIKit)
-    import UIKit
-    public typealias OSImageRenderingMode = UIImage.RenderingMode
+#if canImport(UIKit)
+import UIKit
+public typealias OSImageRenderingMode = UIImage.RenderingMode
+#elseif canImport(AppKit)
+import AppKit
+public enum OSImageRenderingMode: Int {
+    case automatic
+    case alwaysOriginal
+    case alwaysTemplate
+}
 #endif
