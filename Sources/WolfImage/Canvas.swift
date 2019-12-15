@@ -31,7 +31,7 @@ import AppKit
 #endif
 import WolfColor
 import WolfGeometry
-import WolfCore
+import WolfNumerics
 
 public class Canvas {
     public let bounds: IntRect

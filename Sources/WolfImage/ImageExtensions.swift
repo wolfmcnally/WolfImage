@@ -31,7 +31,9 @@ import UIKit
 #endif
 import WolfColor
 import WolfGeometry
-import WolfCore
+import WolfOSBridge
+import WolfNumerics
+import WolfPipe
 
 extension OSImage {
     public var bounds: CGRect {

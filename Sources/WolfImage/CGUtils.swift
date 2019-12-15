@@ -29,8 +29,8 @@ import UIKit
 import AppKit
 #endif
 
-import WolfCore
 import WolfGeometry
+import WolfOSBridge
 
 public typealias CGContextBlock = (CGContext) -> Void
 
